@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ReasonReact Examples</title>
+    <style>
+      * {
+        font-family: 'Dank Mono';
+        font-size: 14px;
+      }
+      body {
+        margin: 20px;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+      }
+      input {
+        border-radius: 5px;
+        padding: 8px;
+        margin-bottom: 20px;
+      }
+      .app {
+        display: flex;
+        flex-direction: column;
+      }
+      li {
+        list-style: none;
+        margin-bottom: 10px;
+      }
+      .checkbox {
+        position: relative;
+        overflow: hidden;
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        border-radius: 3px;
+        border: 2px solid rgba(0, 0, 0, 0.68);
+        content: '';
+        margin-right: 10px;
+        color: transparent;
+      }
+      .checkbox.completed {
+        border: none;
+      }
+      .checkbox.completed:before {
+        content: '✅';
+        font-size: 24px;
+        position: absolute;
+        left: 1px;
+        top: -2px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="Index.js"></script>
+  </body>
+</html>
